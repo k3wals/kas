@@ -587,7 +587,7 @@ fi
 if [ -n "${CI_JOB_TOKEN}" ] && [ -n "${CI_SERVER_HOST}" ]; then
 	set -- "$@" \
 		-e CI_JOB_TOKEN=${CI_JOB_TOKEN} \
-		-e CI_SERVER_HOST=${CI_SERVER_HOST} \
+		-e CI_SERVER_HOST=${CI_SERVER_HOST}
 fi
 
 for var in TERM KAS_DISTRO KAS_MACHINE KAS_TARGET KAS_TASK KAS_CLONE_DEPTH \
